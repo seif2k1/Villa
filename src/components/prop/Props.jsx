@@ -70,16 +70,12 @@ const Props = () => {
             <AnimatePresence>
               <motion.div
                 onClick={() => {
-                  window !== "undefined" &&
+                  typeof window !== "undefined" &&
                     localStorage.setItem("data", JSON.stringify(data));
 
                   <Nav setActive={active} />;
                 }}
-                key={data.id} /* 
-                onClick={() =>
-                  window !== "undefined" &&
-                  localStorage.setItem("data", data.badrooms, data.bathrooms)
-                } */
+                key={data.id}
                 initial={{ opacity: 0, scale: 0 }}
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0 }}

@@ -13,27 +13,7 @@ const Contact = () => {
           </h1>
         </div>
       </div>
-      <div className="absolute lg:h-[35%] xl:h-[50%] w-full contact h-[30%] z-[-1]">
-        {/* <Image src={contact} alt="video_image" priority layout="response" /> */}
-        {/*  <div className="absolute w-full top-[32%] flex items-center justify-center  ">
-          <Image
-            src={video_bg_1}
-            alt="video_image"
-            priority
-            layout="response"
-            className="rounded-[17px]"
-          />
-        </div>
-        <div className="absolute w-full top-[55%] flex items-center justify-center  ">
-          <div className="z-[1] bg-[#f25525] cursor-pointer p-2 rounded-full">
-            <BsFillPlayCircleFill
-              size={65}
-              className=" scale-[0.8]"
-              fill="white"
-            />
-          </div>
-        </div> */}
-      </div>
+      <div className="absolute lg:h-[35%] xl:h-[50%] w-full contact h-[30%] z-[-1]"></div>
       <div className="w-full h-[65%] flex flex-col lg:flex-row items-center absolute gap-y-[35px] lg:gap-y-0 lg:top-[25%] top-[20%] justify-between">
         <div className=" h-full lg:w-[60%] w-full flex flex-col items-center justify-between ">
           <div className="w-full lg:h-full h-[35rem] flex items-center justify-center  ">
@@ -54,12 +34,7 @@ const Contact = () => {
                 >
                   <div className="w-[70%] rounded-[10px] shadow-3xl bg-white h-[70%] flex items-center justify-between">
                     <div className="w-[60%] h-full flex items-center justify-center">
-                      <Image
-                        src={data.logo}
-                        alt={data.name}
-                        priority
-                        layout="response"
-                      />
+                      <Image src={data.logo} alt={data.name} priority />
                     </div>
                     <div className="flex w-full h-full flex-col items-start justify-center">
                       <h3>{data.type}</h3>

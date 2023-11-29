@@ -1,10 +1,9 @@
 "use client";
 import { useState } from "react";
-import { list } from "./list";
 import { BsFillCalendarFill } from "react-icons/bs";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { info, single } from "@/components/prop/info";
+import { single } from "@/components/prop/info";
 import { usePathname } from "next/navigation";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdOutlineClose } from "react-icons/md";
@@ -58,14 +57,6 @@ const Nav = ({ active, setActive }) => {
         >
           property details
         </Link>
-        {/* 
-        <button
-          onClick={() => {
-            console.log(JSON.parse(window.localStorage.getItem("data")));
-          }}
-        >
-          get
-        </button> */}
         <Link
           onClick={() => {
             setOpen(false);
@@ -88,7 +79,7 @@ const Nav = ({ active, setActive }) => {
       </ul>
       {open === false ? (
         <GiHamburgerMenu
-          className="z-[4] lg:hidden"
+          className="z-[4] lg:hidden cursor-pointer"
           size={35}
           onClick={() => {
             setOpen(true);
@@ -96,7 +87,7 @@ const Nav = ({ active, setActive }) => {
         />
       ) : (
         <MdOutlineClose
-          className="z-[4] lg:hidden"
+          className="z-[4] lg:hidden cursor-pointer"
           size={35}
           onClick={() => {
             setOpen(false);

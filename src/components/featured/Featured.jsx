@@ -1,12 +1,9 @@
 "use client";
-import { useState } from "react";
-import { featuredDetails, featuredInfo, image } from "./info";
+import { featuredDetails, image } from "./info";
 import Image from "next/image";
-import { info } from "../navi/preNAv/info";
 import { DefaultAccordion } from "./Accordition";
 
 const Featured = () => {
-  const [select, setSelect] = useState(featuredInfo.map((inf) => inf.name));
   return (
     <div className="h-[250vh] lg:h-[115vh] w-full mt-[100px] lg:mt-[0] flex flex-col lg:flex-row items-center justify-between">
       <div className="lg:w-[33%] w-full lg:h-full lg:items-center flex items-end justify-end pe-[20px]">

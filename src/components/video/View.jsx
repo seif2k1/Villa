@@ -15,15 +15,12 @@ const View = () => {
             </h1>
           </div>
         </div>
-        {/* 
-        <Image src={video_bg} alt="video_image" priority layout="response" /> */}
         <div className="absolute h-[85%] lg:h-[85%] md:w-full md:h-[70%] inset-0 video -z-[1]"></div>
         <div className="absolute lg:w-[75%] lg:left-[10%] lg:h-[75%] w-full lg:top-[43%] top-[75%] md:top-[40%] flex items-center justify-center  ">
           <Image
             src={video_bg_1}
             alt="video_image"
             priority
-            layout="response"
             className="rounded-[17px]"
           />
         </div>

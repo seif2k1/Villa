@@ -101,7 +101,6 @@ const Deal = () => {
                     src={data.logo}
                     alt="video_image"
                     priority
-                    layout="response"
                     className="rounded-[17px] h-full w-full "
                   />
                 </motion.div>
